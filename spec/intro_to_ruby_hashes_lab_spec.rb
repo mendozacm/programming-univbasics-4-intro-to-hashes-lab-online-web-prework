@@ -28,7 +28,7 @@ describe "working with hashes" do
     describe "id_generator" do
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
-        expect(id_generator[:id]).to be 1
+        expect(id_generator[:id]).to be_an Integer
         expect(id_generator[:id]).to be > 0
       end
     end
